@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الرائد للمرايا | أكبر مخزون مرايا سيارات في صنعاء</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&family=Cairo:wght@600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --orange:#E2571C;
+    --orange-deep:#B9420F;
+    --charcoal:#1F1712;
+    --charcoal-soft:#2B211A;
+    --gold:#D4AF37;
+    --cream:#FFF3E6;
+    --paper:#FFFBF6;
+    --line:#EAD9C6;
+    --ink:#2A1E14;
+    --ink-soft:#6B5B4C;
+    --gray-badge:#8C8177;
+    --brown-badge:#7A4B29;
+    --card-bg:#ffffff;
+  }
+  html[data-theme="dark"]{
+    --charcoal:#0F0B08;
+    --charcoal-soft:#1B140F;
+    --cream:#241B14;
+    --paper:#171110;
+    --line:#3A2C22;
+    --ink:#F3E9DD;
+    --ink-soft:#B7A797;
+    --card-bg:#211812;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Tajawal',sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.6;
+    transition:background .2s, color .2s;
+  }
+  h1,h2,h3,.disp{font-family:'Cairo',sans-serif;}
+  img{max-width:100%;display:block;}
+  button{font-family:inherit;cursor:pointer;border:none;}
+  a{color:inherit;text-decoration:none;}
+  ::selection{background:var(--gold);color:var(--charcoal);}
+
+  /* ===== Header ===== */
+  header{position:sticky;top:0;z-index:40;background:var(--orange);color:#fff;box-shadow:0 2px 14px rgba(0,0,0,.15);}
+  .header-inner{max-width:1220px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;}
+  .brand{display:flex;align-items:center;gap:10px;}
+  .brand-icon{width:42px;height:42px;border-radius:10px;background:var(--charcoal);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .brand-icon svg{width:26px;height:26px;}
+  .brand-text .name{font-family:'Cairo',sans-serif;font-weight:800;font-size:1.15rem;line-height:1.1;}
+  .brand-text .sub{font-size:.72rem;opacity:.9;}
+  nav.main-nav{display:flex;gap:22px;align-items:center;}
+  nav.main-nav a{font-weight:700;font-size:.95rem;opacity:.95;padding:6px 2px;border-bottom:2px solid transparent;transition:border-color .15s;}
+  nav.main-nav a:hover{border-color:var(--charcoal);}
+  .header-actions{display:flex;gap:8px;align-items:center;}
+  .icon-btn{display:flex;align-items:center;gap:6px;background:var(--charcoal);color:#fff;padding:9px 14px;border-radius:9px;font-weight:700;font-size:.85rem;transition:transform .12s ease, background .15s;}
+  .icon-btn:hover{background:#000;transform:translateY(-1px);}
+  .icon-btn svg{width:17px;height:17px;flex-shrink:0;}
+  .icon-btn.ghost{background:rgba(255,255,255,.16);}
+  .icon-btn.ghost:hover{background:rgba(255,255,255,.28);}
+  .icon-circle{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center;color:#fff;transition:background .15s;flex-shrink:0;}
+  .icon-circle:hover{background:rgba(255,255,255,.3);}
+  .icon-circle svg{width:19px;height:19px;}
+  .admin-chip{display:flex;align-items:center;gap:8px;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.3);padding:6px 12px;border-radius:999px;font-size:.8rem;font-weight:700;}
+  #hamburger{display:none;background:none;color:#fff;padding:6px;}
+  #hamburger svg{width:26px;height:26px;}
+
+  /* ===== Hero ===== */
+  .hero{background:radial-gradient(circle at 85% 0%, rgba(255,255,255,.14), transparent 55%),linear-gradient(180deg, var(--orange) 0%, var(--orange-deep) 100%);color:#fff;padding:56px 20px 70px;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.08) 1.5px, transparent 1.5px);background-size:26px 26px;opacity:.5;pointer-events:none;}
+  .hero-inner{max-width:920px;margin:0 auto;text-align:center;position:relative;}
+  .eyebrow-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.35);padding:7px 16px;border-radius:999px;font-size:.85rem;font-weight:700;margin-bottom:18px;}
+  .hero h1{font-size:clamp(1.9rem,4.6vw,3.1rem);font-weight:800;line-height:1.25;margin-bottom:16px;}
+  .hero h1 span{color:var(--gold);}
+  .hero p.lead{font-size:1.05rem;opacity:.95;max-width:640px;margin:0 auto 34px;}
+  .search-box{background:var(--card-bg);border-radius:16px;padding:16px;box-shadow:0 18px 40px rgba(0,0,0,.28);display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:10px;}
+  .search-box input{background:var(--cream);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:.92rem;color:var(--ink);font-family:inherit;}
+  .search-box input::placeholder{color:var(--ink-soft);}
+  .search-box button{background:var(--charcoal);color:#fff;border-radius:10px;padding:12px 22px;font-weight:700;font-size:.92rem;display:flex;align-items:center;gap:8px;justify-content:center;transition:background .15s;}
+  .search-box button:hover{background:#000;}
+  .trust-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:24px;}
+  .trust-chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:8px 14px;border-radius:999px;font-size:.82rem;font-weight:600;display:flex;align-items:center;gap:6px;}
+
+  section{padding:60px 20px;}
+  .section-inner{max-width:1220px;margin:0 auto;}
+  .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:28px;flex-wrap:wrap;}
+  .section-head h2{font-size:clamp(1.4rem,2.6vw,1.9rem);font-weight:800;color:var(--ink);}
+  .section-head p{color:var(--ink-soft);font-size:.92rem;margin-top:4px;}
+  .tag-orange{color:var(--orange-deep);font-weight:800;}
+
+  .cat-strip{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px;}
+  .cat-pill{padding:9px 16px;border-radius:999px;font-size:.85rem;font-weight:700;background:var(--cream);border:1px solid var(--line);color:var(--ink);transition:all .15s;}
+  .cat-pill.active{background:var(--charcoal);color:#fff;border-color:var(--charcoal);}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px;}
+  .card{background:var(--card-bg);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:transform .15s, box-shadow .15s;display:flex;flex-direction:column;}
+  .card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(31,23,18,.1);}
+  .card-media{aspect-ratio:4/3;background:var(--cream);position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+  .card-media img{width:100%;height:100%;object-fit:cover;}
+  .card-media svg{width:52%;height:52%;opacity:.35;}
+  .badge{position:absolute;top:10px;right:10px;padding:4px 11px;border-radius:999px;font-size:.72rem;font-weight:800;color:#fff;}
+  .badge.b-agency{background:var(--gold);color:var(--charcoal);}
+  .badge.b-new{background:var(--gray-badge);}
+  .badge.b-commercial{background:var(--orange-deep);}
+  .badge.b-used{background:var(--brown-badge);}
+  .card-body{padding:14px 14px 16px;display:flex;flex-direction:column;gap:6px;flex:1;}
+  .card-body .pname{font-weight:800;font-size:1rem;color:var(--ink);}
+  .card-body .pmeta{font-size:.78rem;color:var(--ink-soft);}
+  .card-body .pprice{font-family:'Cairo',sans-serif;font-weight:800;font-size:1.15rem;color:var(--orange-deep);margin-top:2px;}
+  .card-foot{margin-top:auto;padding-top:8px;display:flex;gap:8px;}
+  .btn-order{flex:1;background:var(--charcoal);color:#fff;padding:10px;border-radius:9px;font-weight:700;font-size:.85rem;text-align:center;transition:background .15s;}
+  .btn-order:hover{background:#000;}
+  .empty-state{text-align:center;padding:60px 20px;color:var(--ink-soft);border:1.5px dashed var(--line);border-radius:16px;}
+
+  .svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;}
+  .svc-card{background:var(--charcoal);color:#fff;border-radius:16px;padding:24px 20px;display:flex;flex-direction:column;gap:12px;}
+  .svc-card .ic{width:44px;height:44px;border-radius:11px;background:var(--orange);display:flex;align-items:center;justify-content:center;}
+  .svc-card .ic svg{width:24px;height:24px;color:#fff;}
+  .svc-card h3{font-size:1.02rem;font-weight:800;}
+  .svc-card p{font-size:.85rem;color:#D9CFC5;}
+
+  .about-wrap{background:var(--charcoal);color:#fff;border-radius:20px;padding:36px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;}
+  .about-wrap h2{color:#fff;}
+  .info-row{display:flex;gap:12px;align-items:flex-start;margin-top:16px;font-size:.9rem;}
+  .info-row .ic{width:34px;height:34px;border-radius:9px;background:var(--orange);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .info-row .ic svg{width:18px;height:18px;}
+  .about-wrap .hours{color:#D9CFC5;}
+  .map-panel{background:var(--orange);border-radius:14px;padding:24px;display:flex;flex-direction:column;justify-content:center;gap:14px;text-align:center;}
+  .map-panel svg{width:44px;height:44px;margin:0 auto;}
+  .map-panel a.btn-map{background:var(--charcoal);color:#fff;padding:12px 18px;border-radius:10px;font-weight:700;font-size:.88rem;display:inline-block;}
+
+  footer{background:var(--ink);color:#C7BAAC;padding:26px 20px;text-align:center;font-size:.82rem;display:flex;flex-direction:column;gap:6px;align-items:center;}
+  html[data-theme="dark"] footer{background:#000;}
+  footer .admin-link{opacity:.55;font-size:.75rem;text-decoration:underline;}
+
+  .fab-wa{position:fixed;bottom:22px;left:22px;z-index:50;background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,.25);transition:transform .15s;}
+  .fab-wa:hover{transform:scale(1.06);}
+  .fab-wa svg{width:28px;height:28px;}
+  .fab-ai{position:fixed;bottom:22px;right:22px;z-index:50;background:var(--charcoal);color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,.25);transition:transform .15s;border:2px solid var(--gold);}
+  .fab-ai:hover{transform:scale(1.06);}
+  .fab-ai svg{width:26px;height:26px;}
+
+  .overlay{position:fixed;inset:0;background:rgba(20,14,9,.6);display:none;align-items:center;justify-content:center;z-index:100;padding:16px;}
+  .overlay.open{display:flex;}
+  .modal{background:var(--card-bg);color:var(--ink);border-radius:16px;max-width:480px;width:100%;max-height:88vh;overflow-y:auto;padding:24px;position:relative;}
+  .modal h3{font-size:1.15rem;font-weight:800;margin-bottom:4px;}
+  .modal .modal-sub{font-size:.82rem;color:var(--ink-soft);margin-bottom:18px;}
+  .modal .close-x{position:absolute;top:16px;left:16px;width:30px;height:30px;border-radius:50%;background:var(--cream);color:var(--ink);display:flex;align-items:center;justify-content:center;}
+  .field{margin-bottom:14px;}
+  .field label{display:block;font-size:.82rem;font-weight:700;margin-bottom:6px;color:var(--ink);}
+  .field input,.field select,.field textarea{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:9px;font-family:inherit;font-size:.9rem;background:var(--paper);color:var(--ink);}
+  .field textarea{resize:vertical;min-height:70px;}
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .checkbox-row{display:flex;align-items:center;gap:8px;font-size:.85rem;padding:8px 0;}
+  .checkbox-row input{width:auto;}
+  .submit-btn{width:100%;background:var(--orange);color:#fff;padding:13px;border-radius:10px;font-weight:800;font-size:.95rem;margin-top:6px;transition:background .15s;}
+  .submit-btn:hover{background:var(--orange-deep);}
+  .btn-secondary{width:100%;background:var(--cream);color:var(--ink);padding:12px;border-radius:10px;font-weight:700;font-size:.88rem;margin-top:8px;border:1px solid var(--line);}
+  .form-note{font-size:.75rem;color:var(--ink-soft);margin-top:10px;text-align:center;}
+  .thumb-preview{width:100%;height:120px;border-radius:10px;background:var(--cream);border:1.5px dashed var(--line);display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:10px;color:var(--ink-soft);font-size:.8rem;}
+  .thumb-preview img{width:100%;height:100%;object-fit:cover;}
+  .toast{position:fixed;bottom:22px;right:22px;background:var(--charcoal);color:#fff;padding:13px 18px;border-radius:10px;font-size:.88rem;font-weight:700;z-index:200;display:none;box-shadow:0 12px 26px rgba(0,0,0,.3);}
+  .toast.show{display:block;animation:fadeup .25s ease;}
+  @keyframes fadeup{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+  .error-text{color:#C9392B;font-size:.8rem;margin-top:6px;font-weight:700;display:none;}
+  .error-text.show{display:block;}
+
+  /* ===== Admin dashboard ===== */
+  .admin-overlay{position:fixed;inset:0;background:var(--paper);z-index:150;display:none;flex-direction:column;}
+  .admin-overlay.open{display:flex;}
+  .admin-topbar{background:var(--charcoal);color:#fff;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px;}
+  .admin-topbar .abrand{display:flex;align-items:center;gap:10px;font-weight:800;font-family:'Cairo',sans-serif;}
+  .admin-topbar .abrand .dot{width:9px;height:9px;border-radius:50%;background:var(--gold);}
+  .admin-body{flex:1;display:flex;overflow:hidden;}
+  .admin-sidebar{width:220px;background:var(--charcoal-soft);color:#fff;padding:18px 12px;display:flex;flex-direction:column;gap:4px;flex-shrink:0;overflow-y:auto;}
+  .admin-tab{padding:11px 14px;border-radius:9px;font-size:.88rem;font-weight:700;text-align:right;color:#D9CFC5;display:flex;align-items:center;gap:9px;}
+  .admin-tab svg{width:17px;height:17px;flex-shrink:0;}
+  .admin-tab:hover{background:rgba(255,255,255,.06);}
+  .admin-tab.active{background:var(--orange);color:#fff;}
+  .admin-content{flex:1;overflow-y:auto;padding:26px 30px;}
+  .admin-content h2{font-size:1.3rem;font-weight:800;margin-bottom:6px;}
+  .admin-content .desc{color:var(--ink-soft);font-size:.85rem;margin-bottom:20px;}
+  .admin-panel-section{display:none;}
+  .admin-panel-section.active{display:block;}
+  table.admin-table{width:100%;border-collapse:collapse;font-size:.86rem;}
+  table.admin-table th{text-align:right;padding:10px 12px;background:var(--cream);font-weight:800;border-bottom:2px solid var(--line);}
+  table.admin-table td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:middle;}
+  table.admin-table img{width:42px;height:42px;object-fit:cover;border-radius:7px;}
+  .row-actions{display:flex;gap:6px;}
+  .mini-btn{padding:6px 12px;border-radius:7px;font-size:.78rem;font-weight:700;}
+  .mini-btn.edit{background:var(--cream);border:1px solid var(--line);color:var(--ink);}
+  .mini-btn.del{background:#C9392B;color:#fff;}
+  .add-fab-row{margin-bottom:16px;}
+  .perm-badges{display:flex;gap:5px;flex-wrap:wrap;}
+  .perm-badge{background:var(--cream);border:1px solid var(--line);padding:2px 9px;border-radius:999px;font-size:.7rem;font-weight:700;}
+  .role-badge{background:var(--gold);color:var(--charcoal);padding:2px 10px;border-radius:999px;font-size:.72rem;font-weight:800;}
+  .settings-card{background:var(--card-bg);border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:16px;max-width:520px;}
+  .settings-card h3{font-size:.95rem;font-weight:800;margin-bottom:14px;}
+  .security-note{background:var(--cream);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:.78rem;color:var(--ink-soft);margin-top:16px;line-height:1.7;}
+
+  /* ===== AI Chat ===== */
+  .chat-panel{position:fixed;bottom:90px;right:22px;width:340px;max-width:90vw;height:440px;background:var(--card-bg);border:1px solid var(--line);border-radius:16px;box-shadow:0 20px 50px rgba(0,0,0,.28);z-index:60;display:none;flex-direction:column;overflow:hidden;}
+  .chat-panel.open{display:flex;}
+  .chat-head{background:var(--charcoal);color:#fff;padding:13px 16px;display:flex;align-items:center;justify-content:space-between;}
+  .chat-head .t{font-weight:800;font-size:.9rem;display:flex;align-items:center;gap:8px;}
+  .chat-body{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px;}
+  .msg{max-width:85%;padding:9px 12px;border-radius:12px;font-size:.84rem;line-height:1.55;}
+  .msg.bot{background:var(--cream);align-self:flex-start;border-bottom-right-radius:2px;}
+  .msg.user{background:var(--orange);color:#fff;align-self:flex-end;border-bottom-left-radius:2px;}
+  .msg.typing{color:var(--ink-soft);font-style:italic;}
+  .chat-input-row{display:flex;border-top:1px solid var(--line);padding:10px;gap:8px;}
+  .chat-input-row input{flex:1;border:1px solid var(--line);border-radius:9px;padding:9px 11px;font-family:inherit;font-size:.85rem;background:var(--paper);color:var(--ink);}
+  .chat-input-row button{background:var(--orange);color:#fff;width:38px;height:38px;border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+
+  .orders-list{display:flex;flex-direction:column;gap:10px;margin-top:10px;}
+  .order-item{border:1px solid var(--line);border-radius:10px;padding:12px;font-size:.85rem;display:flex;flex-direction:column;gap:3px;background:var(--paper);}
+  .order-item .oname{font-weight:800;}
+
+  @media (max-width:860px){
+    nav.main-nav{display:none;}
+    #hamburger{display:flex;}
+    .search-box{grid-template-columns:1fr;}
+    .about-wrap{grid-template-columns:1fr;}
+    .field-row{grid-template-columns:1fr;}
+    .admin-sidebar{width:64px;}
+    .admin-tab span{display:none;}
+    .admin-content{padding:18px 14px;}
+    .chat-panel{right:10px;left:10px;width:auto;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9l6-3v9l-6-3"/><rect x="3" y="7" width="11" height="10" rx="2"/><circle cx="8.5" cy="12" r="1.6"/></svg></div>
+      <div class="brand-text"><div class="name">الرائد للمرايا</div><div class="sub">لمرايا السيارات بجميع أنواعها</div></div>
+    </div>
+    <nav class="main-nav">
+      <a href="#catalog">المخزون</a>
+      <a href="#services">الخدمات</a>
+      <a href="#about">من نحن</a>
+    </nav>
+    <div class="header-actions" id="headerActions">
+      <button class="icon-circle" id="themeToggle" title="الوضع الليلي/النهاري">
+        <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+      <button class="icon-btn ghost" id="openOrderBtn" title="إضافة طلب">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 14l2 2 4-4"/></svg>
+        <span>إضافة طلب</span>
+      </button>
+      <button class="icon-circle" id="adminEntryBtn" title="دخول الإدارة">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3"/><path d="M5 21v-1a7 7 0 0114 0v1"/></svg>
+      </button>
+      <button id="hamburger" onclick="document.getElementById('mobileNav').classList.toggle('open')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobileNav" style="display:none;background:var(--orange-deep);padding:12px 20px;flex-direction:column;gap:10px;">
+    <a href="#catalog" style="color:#fff;font-weight:700;">المخزون</a>
+    <a href="#services" style="color:#fff;font-weight:700;">الخدمات</a>
+    <a href="#about" style="color:#fff;font-weight:700;">من نحن</a>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow-badge">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>
+      إصلاح وبيع جميع أنواع مرايا السيارات — الوكالة والتجاري
+    </div>
+    <h1>أكبر مخزون مرايا سيارات في صنعاء<br><span>ابحث عن مرآتك بدقة، خلال ثوانٍ</span></h1>
+    <p class="lead">مئات المرايا لكل الماركات والموديلات — وكالة، جديد، تجاري، وتشليح. حدد ماركة سيارتك وموديلها لنعرض لك القطعة المطابقة مباشرة.</p>
+    <form class="search-box" id="searchForm">
+      <input type="text" id="qBrand" placeholder="الماركة (تويوتا، هيونداي...)">
+      <input type="text" id="qModel" placeholder="الموديل (كورولا، النترا...)">
+      <input type="text" id="qYear" placeholder="سنة الصنع">
+      <button type="submit"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg> بحث</button>
+    </form>
+    <div class="trust-row" id="trustRow">
+      <div class="trust-chip" id="trustPhone">📞 776525157 / 739088991</div>
+      <div class="trust-chip" id="trustAddr">📍 شارع الدائري، صنعاء</div>
+      <div class="trust-chip">✅ ضمان المطابقة</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Catalog ===== -->
+<section id="catalog">
+  <div class="section-inner">
+    <div class="section-head">
+      <div><h2>المخزون <span class="tag-orange">المتاح</span></h2>
+      <p>تصفّح القطع المتوفرة حاليًا — أو تواصل معنا إن لم تجد ما تبحث عنه.</p></div>
+    </div>
+    <div class="cat-strip" id="catStrip">
+      <button class="cat-pill active" data-cat="all">الكل</button>
+      <button class="cat-pill" data-cat="وكالة">وكالة</button>
+      <button class="cat-pill" data-cat="جديد">جديد</button>
+      <button class="cat-pill" data-cat="تجاري جديد">تجاري جديد</button>
+      <button class="cat-pill" data-cat="تشليح">تشليح</button>
+    </div>
+    <div class="grid" id="productGrid"></div>
+  </div>
+</section>
+
+<!-- ===== Services ===== -->
+<section id="services" style="background:var(--cream);">
+  <div class="section-inner">
+    <div class="section-head">
+      <div><h2>خدماتنا</h2><p>بالإضافة إلى بيع المرايا، نقدّم خدمات متخصصة بالزجاج والتعديل.</p></div>
+    </div>
+    <div class="svc-grid" id="servicesGrid"></div>
+  </div>
+</section>
+
+<!-- ===== About ===== -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-wrap">
+      <div>
+        <h2>من نحن</h2>
+        <div class="info-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div id="aboutAddr">صنعاء، شارع الدائري، بجوار جامعة صنعاء الجديدة وجامعة العلوم والتكنولوجيا (فرع الطالبات)، بعد محل حلويات موكا، جوار أثاث كوم، باتجاه جسر مذبح.</div></div>
+        <div class="info-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.68 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.32 1.85.55 2.81.68A2 2 0 0122 16.92z"/></svg></div>
+          <div id="aboutPhones">776525157 &nbsp;/&nbsp; 739088991</div></div>
+        <div class="info-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <div class="hours" id="aboutHours">يوميًا: 8:00 صباحًا — 8:00 مساءً (عدا الجمعة)</div></div>
+      </div>
+      <div class="map-panel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div style="color:#fff;font-weight:700;">شاهد موقع المحل على الخريطة</div>
+        <a class="btn-map" href="https://maps.app.goo.gl/q6JFQjn4BL8Bg7yPA" target="_blank" rel="noopener">فتح خرائط Google</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>الرائد للمرايا للسيارات — صنعاء · <span id="footerPhones">776525157 / 739088991</span></div>
+  <a class="admin-link" id="footerAdminLink" href="#">دخول الإدارة</a>
+</footer>
+
+<a class="fab-wa" id="fabWa" href="https://wa.me/967776525157" target="_blank" rel="noopener" title="تواصل واتساب">
+  <svg viewBox="0 0 32 32" fill="#fff"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.699 4.61 1.902 6.48L4 29l7.72-1.86A11.94 11.94 0 0016 27c6.627 0 12-5.373 12-12S22.628 3 16.001 3zm0 21.6c-1.98 0-3.83-.55-5.41-1.5l-.39-.23-4.58 1.1 1.12-4.47-.25-.4A9.55 9.55 0 016.4 15c0-5.3 4.3-9.6 9.6-9.6s9.6 4.3 9.6 9.6-4.3 9.6-9.6 9.6zm5.27-7.18c-.29-.15-1.71-.84-1.98-.94-.27-.1-.46-.15-.66.15-.2.29-.76.94-.93 1.13-.17.2-.34.22-.63.07-.29-.15-1.22-.45-2.32-1.43-.86-.76-1.44-1.71-1.61-2-.17-.29-.02-.44.13-.59.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.51-.07-.15-.66-1.59-.9-2.18-.24-.57-.48-.5-.66-.5-.17 0-.37-.02-.56-.02-.2 0-.51.07-.78.37-.27.29-1.02 1-1.02 2.44s1.05 2.83 1.19 3.03c.15.2 2.06 3.15 5 4.42.7.3 1.24.48 1.67.62.7.22 1.34.19 1.84.12.56-.08 1.71-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.13-.26-.2-.55-.35z"/></svg>
+</a>
+<button class="fab-ai" id="fabAi" title="مساعد ذكي">
+  <svg viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M2 14h2M20 14h2M9 13v2M15 13v2"/></svg>
+</button>
+
+<!-- ===== AI chat panel ===== -->
+<div class="chat-panel" id="chatPanel">
+  <div class="chat-head">
+    <div class="t"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2"><path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/></svg> مساعد الرائد للمرايا</div>
+    <button onclick="document.getElementById('chatPanel').classList.remove('open')" style="background:none;color:#fff;">✕</button>
+  </div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chat-input-row">
+    <input type="text" id="chatInput" placeholder="اسأل عن قطعة، سعر، أو خدمة...">
+    <button id="chatSend"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
+  </div>
+</div>
+
+<!-- ===== Order modal ===== -->
+<div class="overlay" id="orderOverlay">
+  <div class="modal">
+    <div class="close-x" onclick="closeModal('orderOverlay')">✕</div>
+    <h3>إضافة طلب</h3>
+    <div class="modal-sub">سجّل بيانات العميل وتفاصيل الطلب، ثم أرسله واتساب مباشرة.</div>
+    <form id="orderForm">
+      <div class="field"><label>اسم العميل</label><input type="text" id="ordCustomer" required></div>
+      <div class="field"><label>رقم الهاتف</label><input type="tel" id="ordPhone" required placeholder="7XXXXXXXX"></div>
+      <div class="field"><label>المنتج / الوصف</label><input type="text" id="ordItem" required></div>
+      <div class="field-row">
+        <div class="field"><label>الكمية</label><input type="number" id="ordQty" value="1" min="1"></div>
+        <div class="field"><label>طريقة الاستلام</label><select id="ordDelivery"><option value="استلام من المحل">استلام من المحل</option><option value="توصيل">توصيل (رسوم إضافية)</option></select></div>
+      </div>
+      <div class="field"><label>ملاحظات</label><textarea id="ordNotes"></textarea></div>
+      <button type="submit" class="submit-btn">حفظ الطلب</button>
+    </form>
+  </div>
+</div>
+
+<!-- ===== Admin login modal ===== -->
+<div class="overlay" id="loginOverlay">
+  <div class="modal">
+    <div class="close-x" onclick="closeModal('loginOverlay')">✕</div>
+    <h3>دخول الإدارة</h3>
+    <div class="modal-sub">هذا الدخول مخصص لموظفي المحل فقط، منفصل عن حساب الزوار المشترك.</div>
+    <form id="loginForm">
+      <div class="field"><label>اسم المستخدم</label><input type="text" id="loginUser" required autocomplete="username"></div>
+      <div class="field"><label>كلمة المرور</label><input type="password" id="loginPass" required autocomplete="current-password"></div>
+      <div class="error-text" id="loginError">بيانات الدخول غير صحيحة</div>
+      <button type="submit" class="submit-btn">دخول</button>
+    </form>
+    <div class="security-note">حساب المدير الافتراضي: admin / admin123 — يرجى تغيير كلمة المرور فورًا من الإعدادات بعد أول دخول.</div>
+  </div>
+</div>
+
+<!-- ===== Product/Service form modal ===== -->
+<div class="overlay" id="itemOverlay">
+  <div class="modal">
+    <div class="close-x" onclick="closeModal('itemOverlay')">✕</div>
+    <h3 id="itemFormTitle">إضافة قطعة للمخزون</h3>
+    <div class="modal-sub" id="itemFormSub">أضف قطعة جديدة لتظهر مباشرة في المخزون.</div>
+    <form id="invForm">
+      <div class="thumb-preview" id="invThumb">لا توجد صورة</div>
+      <div class="field"><label>صورة المنتج</label><input type="file" id="invImage" accept="image/*"></div>
+      <div class="field"><label>اسم القطعة</label><input type="text" id="invName" required></div>
+      <div class="field-row">
+        <div class="field"><label>الماركة</label><input type="text" id="invBrand"></div>
+        <div class="field"><label>الموديل</label><input type="text" id="invModel"></div>
+      </div>
+      <div class="field-row">
+        <div class="field"><label>السعر (ر.ي)</label><input type="number" id="invPrice" required></div>
+        <div class="field"><label>النوع</label><select id="invType"><option value="وكالة">وكالة</option><option value="جديد">جديد</option><option value="تجاري جديد">تجاري جديد</option><option value="تشليح">تشليح</option></select></div>
+      </div>
+      <button type="submit" class="submit-btn" id="invSubmitBtn">إضافة إلى المخزون</button>
+    </form>
+  </div>
+</div>
+
+<!-- ===== Service form modal ===== -->
+<div class="overlay" id="svcOverlay">
+  <div class="modal">
+    <div class="close-x" onclick="closeModal('svcOverlay')">✕</div>
+    <h3 id="svcFormTitle">إضافة خدمة</h3>
+    <form id="svcForm">
+      <div class="field"><label>اسم الخدمة</label><input type="text" id="svcName" required></div>
+      <div class="field"><label>الوصف</label><textarea id="svcDesc" required></textarea></div>
+      <button type="submit" class="submit-btn" id="svcSubmitBtn">حفظ الخدمة</button>
+    </form>
+  </div>
+</div>
+
+<!-- ===== Add admin user modal ===== -->
+<div class="overlay" id="userOverlay">
+  <div class="modal">
+    <div class="close-x" onclick="closeModal('userOverlay')">✕</div>
+    <h3>إضافة مستخدم إداري</h3>
+    <div class="modal-sub">حدد الصلاحيات التي يحتاجها هذا الحساب فقط.</div>
+    <form id="userForm">
+      <div class="field"><label>اسم المستخدم</label><input type="text" id="newAdminUser" required></div>
+      <div class="field"><label>كلمة المرور</label><input type="password" id="newAdminPass" required></div>
+      <div class="field">
+        <label>الصلاحيات</label>
+        <div class="checkbox-row"><input type="checkbox" id="permUsers"> <span>إدارة المستخدمين</span></div>
+        <div class="checkbox-row"><input type="checkbox" id="permProducts" checked> <span>إدارة المنتجات والخدمات</span></div>
+        <div class="checkbox-row"><input type="checkbox" id="permContact"> <span>إدارة التواصل</span></div>
+        <div class="checkbox-row"><input type="checkbox" id="permSettings"> <span>إدارة الصلاحيات والإعدادات</span></div>
+      </div>
+      <button type="submit" class="submit-btn">إضافة المستخدم</button>
+    </form>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<!-- ===== Admin dashboard ===== -->
+<div class="admin-overlay" id="adminOverlay">
+  <div class="admin-topbar">
+    <div class="abrand"><span class="dot"></span> لوحة تحكم الرائد للمرايا</div>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <span id="adminWhoami" style="font-size:.82rem;opacity:.85;"></span>
+      <button class="icon-btn ghost" onclick="closeAdminPanel()">إغلاق</button>
+      <button class="icon-btn" onclick="adminLogout()">تسجيل خروج</button>
+    </div>
+  </div>
+  <div class="admin-body">
+    <div class="admin-sidebar" id="adminSidebar">
+      <button class="admin-tab active" data-tab="products"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/></svg><span>المنتجات والخدمات</span></button>
+      <button class="admin-tab" data-tab="orders"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/></svg><span>الطلبات</span></button>
+      <button class="admin-tab" data-tab="users"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><path d="M2 20a7 7 0 0114 0M17 8a3 3 0 010 6M22 20a6.5 6.5 0 00-4-6"/></svg><span>المستخدمون</span></button>
+      <button class="admin-tab" data-tab="contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.8 19.8 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.68 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.32 1.85.55 2.81.68A2 2 0 0122 16.92z"/></svg><span>التواصل</span></button>
+      <button class="admin-tab" data-tab="settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.65 1.65 0 004.6 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06A1.65 1.65 0 009 4.6a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09A1.65 1.65 0 0015 4.6a1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg><span>الصلاحيات والإعدادات</span></button>
+    </div>
+
+    <div class="admin-content">
+      <!-- Products & Services -->
+      <div class="admin-panel-section active" id="tab-products">
+        <h2>المنتجات والخدمات</h2>
+        <div class="desc">إضافة، تعديل، أو حذف قطع المخزون وخدمات المحل.</div>
+        <div class="add-fab-row" style="display:flex;gap:10px;">
+          <button class="icon-btn" onclick="openInvForm()">+ إضافة منتج</button>
+          <button class="icon-btn ghost" style="background:var(--cream);color:var(--ink);" onclick="openSvcForm()">+ إضافة خدمة</button>
+        </div>
+        <h3 style="font-size:.95rem;margin:18px 0 8px;">المنتجات (المرايا)</h3>
+        <div style="overflow-x:auto;"><table class="admin-table" id="adminProductsTable"></table></div>
+        <h3 style="font-size:.95rem;margin:24px 0 8px;">الخدمات</h3>
+        <div style="overflow-x:auto;"><table class="admin-table" id="adminServicesTable"></table></div>
+      </div>
+
+      <!-- Orders -->
+      <div class="admin-panel-section" id="tab-orders">
+        <h2>الطلبات</h2>
+        <div class="desc">سجل الطلبات المستلمة من الموقع.</div>
+        <div id="adminOrdersList" class="orders-list"></div>
+      </div>
+
+      <!-- Users -->
+      <div class="admin-panel-section" id="tab-users">
+        <h2>إدارة المستخدمين</h2>
+        <div class="desc">حسابات الإدارة وصلاحياتها.</div>
+        <div class="add-fab-row"><button class="icon-btn" onclick="openModal('userOverlay')">+ إضافة مستخدم</button></div>
+        <div style="overflow-x:auto;"><table class="admin-table" id="adminUsersTable"></table></div>
+      </div>
+
+      <!-- Contact -->
+      <div class="admin-panel-section" id="tab-contact">
+        <h2>إدارة التواصل</h2>
+        <div class="desc">هذه البيانات تظهر في الصفحة الرئيسية، الفوتر، وأزرار واتساب.</div>
+        <form id="contactForm" class="settings-card">
+          <div class="field"><label>رقم الهاتف الأساسي (بدون صفر، مثال 77XXXXXXX)</label><input type="text" id="cPhone1" required></div>
+          <div class="field"><label>رقم الهاتف الثانوي</label><input type="text" id="cPhone2"></div>
+          <div class="field"><label>العنوان</label><textarea id="cAddress"></textarea></div>
+          <div class="field"><label>ساعات العمل</label><input type="text" id="cHours"></div>
+          <button type="submit" class="submit-btn">حفظ بيانات التواصل</button>
+        </form>
+      </div>
+
+      <!-- Settings & Permissions -->
+      <div class="admin-panel-section" id="tab-settings">
+        <h2>الصلاحيات والإعدادات</h2>
+        <div class="desc">إعدادات عامة للموقع والمساعد الذكي، وتغيير كلمة المرور.</div>
+        <div class="settings-card">
+          <h3>هوية الموقع</h3>
+          <div class="field"><label>اسم المحل</label><input type="text" id="sSiteName"></div>
+          <div class="field"><label>الشعار الفرعي</label><input type="text" id="sSiteTagline"></div>
+          <button class="submit-btn" onclick="saveSiteIdentity(event)">حفظ</button>
+        </div>
+        <div class="settings-card">
+          <h3>المساعد الذكي (الرد التلقائي)</h3>
+          <div class="checkbox-row"><input type="checkbox" id="sAiEnabled"> <span>تفعيل الرد الآلي بالذكاء الاصطناعي</span></div>
+          <div class="field" style="margin-top:10px;"><label>تعليمات إضافية للمساعد (اختياري)</label><textarea id="sAiInstructions" placeholder="مثال: وجّه العملاء دائمًا للاتصال المباشر لتأكيد توفر القطعة"></textarea></div>
+          <button class="submit-btn" onclick="saveAiSettings(event)">حفظ إعدادات المساعد</button>
+        </div>
+        <div class="settings-card">
+          <h3>تغيير كلمة المرور الخاصة بحسابك</h3>
+          <div class="field"><label>كلمة المرور الجديدة</label><input type="password" id="sNewPass"></div>
+          <button class="submit-btn" onclick="changeOwnPassword(event)">تحديث كلمة المرور</button>
+          <div class="security-note">
+            تنبيه أمني صريح: هذا الموقع مبني كملف واحد بدون خادم فعلي، لذا تُخزَّن كل البيانات (بما فيها هذا الحساب) في مساحة تخزين مشتركة يمكن لأي زائر تقني الوصول إليها عبر أدوات المطوّر في المتصفح. كلمات المرور تُحفظ كتجزئة (Hash) وليست نصًا صريحًا، لكن هذا لا يوفر حماية حقيقية على مستوى إنتاجي. لحماية فعلية لبيانات العملاء والطلبات، يلزم بناء خادم حقيقي وقاعدة بيانات، وهذا خارج نطاق ما يمكن لملف HTML واحد تقديمه.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ================= State ================= */
+let inventory = [];
+let services = [];
+let orders = [];
+let admins = [];
+let siteSettings = {
+  siteName:'الرائد للمرايا', tagline:'لمرايا السيارات بجميع أنواعها',
+  phone1:'776525157', phone2:'739088991',
+  address:'صنعاء، شارع الدائري، بجوار جامعة صنعاء الجديدة وجامعة العلوم والتكنولوجيا (فرع الطالبات)، بعد محل حلويات موكا، جوار أثاث كوم، باتجاه جسر مذبح.',
+  hours:'يوميًا: 8:00 صباحًا — 8:00 مساءً (عدا الجمعة)',
+  aiEnabled:true, aiInstructions:''
+};
+let currentAdmin = null;
+let activeCat = 'all';
+let currentSearch = {brand:'', model:'', year:''};
+let editingProductId = null;
+let editingServiceId = null;
+
+const SEED_INVENTORY = [
+  {id:'seed1', name:'مرآة تويوتا كورولا 2015 - يمين', brand:'تويوتا', model:'كورولا', price:12000, type:'وكالة', image:''},
+  {id:'seed2', name:'مرآة هيونداي النترا 2018 - يسار', brand:'هيونداي', model:'النترا', price:9500, type:'جديد', image:''},
+  {id:'seed3', name:'مرآة هايلوكس تجاري - يمين', brand:'تويوتا', model:'هايلوكس', price:18000, type:'تجاري جديد', image:''},
+  {id:'seed4', name:'مرآة كامري 2012 مستعملة - يسار', brand:'تويوتا', model:'كامري', price:6000, type:'تشليح', image:''}
+];
+const SEED_SERVICES = [
+  {id:'svc1', name:'إصلاح وبيع المرايا', desc:'إصلاح وبيع جميع أنواع مرايا السيارات، الوكالة والتجاري.'},
+  {id:'svc2', name:'زجاج محدب', desc:'يوجد لدينا زجاج محدب خاص بمرايا السيارات بجميع أنواعها.'},
+  {id:'svc3', name:'زجاج النقطة العمياء', desc:'يوجد لدينا زجاج مرسوم عليه النقطة العمياء للسيارات الحديثة.'},
+  {id:'svc4', name:'تعديل المرايا الأوروبية', desc:'نعمل على تعديل المرايا الأوروبية لتناسب سيارتك.'}
+];
+const CAT_META = {
+  'وكالة':{cls:'b-agency', color:'#8a6d1c'},
+  'جديد':{cls:'b-new', color:'#5c564f'},
+  'تجاري جديد':{cls:'b-commercial', color:'#7a2e10'},
+  'تشليح':{cls:'b-used', color:'#4a2f1a'}
+};
+
+function mirrorSVG(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 9l7-3.5v13L14 15"/><rect x="2" y="6" width="12" height="12" rx="2.5"/><circle cx="8" cy="12" r="2.2"/></svg>';}
+function svcSVG(){return '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82M4.6 9a1.65 1.65 0 00-.33-1.82"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>';}
+function escapeHtml(str){return (str||'').replace(/[&<>"\']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+
+/* ================= Hashing ================= */
+async function sha256(text){
+  const enc = new TextEncoder().encode(text);
+  const buf = await crypto.subtle.digest('SHA-256', enc);
+  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+
+/* ================= Storage I/O ================= */
+async function loadInventory(){
+  try{ const r = await window.storage.get('inventory', true); inventory = r && r.value ? JSON.parse(r.value) : SEED_INVENTORY.slice(); }
+  catch(e){ inventory = SEED_INVENTORY.slice(); }
+  renderGrid();
+}
+async function saveInventory(){
+  try{ await window.storage.set('inventory', JSON.stringify(inventory), true); }
+  catch(e){ showToast('تعذّر حفظ المخزون'); }
+}
+async function loadServices(){
+  try{ const r = await window.storage.get('services', true); services = r && r.value ? JSON.parse(r.value) : SEED_SERVICES.slice(); }
+  catch(e){ services = SEED_SERVICES.slice(); }
+  renderServices();
+}
+async function saveServices(){
+  try{ await window.storage.set('services', JSON.stringify(services), true); }
+  catch(e){ showToast('تعذّر حفظ الخدمات'); }
+}
+async function loadOrders(){
+  try{ const r = await window.storage.get('orders', true); orders = r && r.value ? JSON.parse(r.value) : []; }
+  catch(e){ orders = []; }
+}
+async function saveOrders(){
+  try{ await window.storage.set('orders', JSON.stringify(orders), true); }
+  catch(e){ showToast('تعذّر حفظ الطلب'); }
+}
+async function loadAdmins(){
+  try{
+    const r = await window.storage.get('admin_accounts', true);
+    if(r && r.value){ admins = JSON.parse(r.value); }
+    else{
+      const hash = await sha256('admin123');
+      admins = [{username:'admin', passwordHash:hash, role:'super_admin', permissions:{users:true,products:true,contact:true,settings:true}}];
+      await saveAdmins();
+    }
+  }catch(e){ admins = []; }
+}
+async function saveAdmins(){
+  try{ await window.storage.set('admin_accounts', JSON.stringify(admins), true); }
+  catch(e){ showToast('تعذّر حفظ بيانات المستخدمين'); }
+}
+async function loadSiteSettings(){
+  try{
+    const r = await window.storage.get('site_settings', true);
+    if(r && r.value) siteSettings = Object.assign(siteSettings, JSON.parse(r.value));
+  }catch(e){}
+  applySiteSettingsToDom();
+}
+async function saveSiteSettings(){
+  try{ await window.storage.set('site_settings', JSON.stringify(siteSettings), true); }
+  catch(e){ showToast('تعذّر حفظ الإعدادات'); }
+}
+
+function applySiteSettingsToDom(){
+  document.querySelector('.brand-text .name').textContent = siteSettings.siteName;
+  document.querySelector('.brand-text .sub').textContent = siteSettings.tagline;
+  document.getElementById('trustPhone').textContent = '📞 ' + siteSettings.phone1 + (siteSettings.phone2 ? ' / ' + siteSettings.phone2 : '');
+  document.getElementById('aboutPhones').textContent = siteSettings.phone1 + (siteSettings.phone2 ? '  /  ' + siteSettings.phone2 : '');
+  document.getElementById('aboutAddr').textContent = siteSettings.address;
+  document.getElementById('aboutHours').textContent = siteSettings.hours;
+  document.getElementById('footerPhones').textContent = siteSettings.phone1 + (siteSettings.phone2 ? ' / ' + siteSettings.phone2 : '');
+  document.getElementById('fabWa').href = 'https://wa.me/967' + siteSettings.phone1;
+}
+
+/* ================= Theme ================= */
+async function loadTheme(){
+  try{
+    const r = await window.storage.get('theme_pref', false);
+    const t = r && r.value ? r.value : 'light';
+    setTheme(t);
+  }catch(e){ setTheme('light'); }
+}
+function setTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  document.getElementById('themeIcon').innerHTML = t === 'dark'
+    ? '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2 12h2M20 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/>'
+    : '<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>';
+}
+document.getElementById('themeToggle').onclick = async () => {
+  const cur = document.documentElement.getAttribute('data-theme') || 'light';
+  const next = cur === 'light' ? 'dark' : 'light';
+  setTheme(next);
+  try{ await window.storage.set('theme_pref', next, false); }catch(e){}
+};
+
+/* ================= Rendering: products ================= */
+function renderGrid(){
+  const grid = document.getElementById('productGrid');
+  let items = inventory.filter(p => activeCat === 'all' || p.type === activeCat);
+  if(currentSearch.brand) items = items.filter(p => (p.brand||'').includes(currentSearch.brand));
+  if(currentSearch.model) items = items.filter(p => (p.model||'').includes(currentSearch.model));
+  if(items.length === 0){
+    grid.innerHTML = '<div class="empty-state" style="grid-column:1/-1;">لا توجد قطع مطابقة حاليًا. تواصل معنا واتساب أو اتصال.</div>';
+  } else {
+    grid.innerHTML = items.map(p => {
+      const meta = CAT_META[p.type] || CAT_META['جديد'];
+      const media = p.image ? '<img src="'+p.image+'" alt="'+escapeHtml(p.name)+'">' : '<div style="color:'+meta.color+'">'+mirrorSVG()+'</div>';
+      return `<div class="card"><div class="card-media">${media}<div class="badge ${meta.cls}">${p.type}</div></div>
+        <div class="card-body"><div class="pname">${escapeHtml(p.name)}</div>
+        <div class="pmeta">${escapeHtml(p.brand||'')} ${p.model ? '· ' + escapeHtml(p.model) : ''}</div>
+        <div class="pprice">${Number(p.price).toLocaleString('en-US')} ر.ي</div>
+        <div class="card-foot"><a class="btn-order" href="#" onclick="quickOrder('${p.id}');return false;">اطلب الآن</a></div></div></div>`;
+    }).join('');
+  }
+  if(currentAdmin) renderAdminProductsTable();
+}
+function renderServices(){
+  const grid = document.getElementById('servicesGrid');
+  grid.innerHTML = services.map(s => `<div class="svc-card"><div class="ic">${svcSVG()}</div><h3>${escapeHtml(s.name)}</h3><p>${escapeHtml(s.desc)}</p></div>`).join('');
+  if(currentAdmin) renderAdminServicesTable();
+}
+
+document.getElementById('catStrip').addEventListener('click', e => {
+  const btn = e.target.closest('.cat-pill'); if(!btn) return;
+  document.querySelectorAll('.cat-pill').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active'); activeCat = btn.dataset.cat; renderGrid();
+});
+document.getElementById('searchForm').addEventListener('submit', e => {
+  e.preventDefault();
+  currentSearch = {brand:document.getElementById('qBrand').value.trim(), model:document.getElementById('qModel').value.trim(), year:document.getElementById('qYear').value.trim()};
+  renderGrid(); document.getElementById('catalog').scrollIntoView({behavior:'smooth'});
+});
+
+/* ================= Modal helpers ================= */
+function openModal(id){ document.getElementById(id).classList.add('open'); }
+function closeModal(id){ document.getElementById(id).classList.remove('open'); }
+document.getElementById('openOrderBtn').onclick = () => openModal('orderOverlay');
+document.getElementById('adminEntryBtn').onclick = () => currentAdmin ? openAdminPanel() : openModal('loginOverlay');
+document.getElementById('footerAdminLink').onclick = (e) => { e.preventDefault(); currentAdmin ? openAdminPanel() : openModal('loginOverlay'); };
+document.querySelectorAll('.overlay').forEach(ov => ov.addEventListener('click', e => { if(e.target === ov) ov.classList.remove('open'); }));
+
+function quickOrder(productId){
+  const p = inventory.find(x => x.id === productId);
+  openModal('orderOverlay');
+  if(p) document.getElementById('ordItem').value = p.name + ' - ' + p.type;
+}
+let toastTimer;
+function showToast(msg){
+  const t = document.getElementById('toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove('show'), 3200);
+}
+
+/* ================= Orders ================= */
+document.getElementById('orderForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const order = {
+    id:'ord_'+Date.now(), customer:document.getElementById('ordCustomer').value.trim(),
+    phone:document.getElementById('ordPhone').value.trim(), item:document.getElementById('ordItem').value.trim(),
+    qty:document.getElementById('ordQty').value||1, delivery:document.getElementById('ordDelivery').value,
+    notes:document.getElementById('ordNotes').value.trim(), createdAt:new Date().toISOString()
+  };
+  orders.unshift(order); await saveOrders();
+  const waText = encodeURIComponent(`طلب جديد من الموقع\nالعميل: ${order.customer}\nالهاتف: ${order.phone}\nالمنتج: ${order.item}\nالكمية: ${order.qty}\nالاستلام: ${order.delivery}\nملاحظات: ${order.notes||'-'}`);
+  closeModal('orderOverlay'); e.target.reset(); document.getElementById('ordQty').value = 1;
+  showToast('تم حفظ الطلب بنجاح');
+  window.open('https://wa.me/967'+siteSettings.phone1+'?text='+waText, '_blank');
+  if(currentAdmin) renderAdminOrders();
+});
+
+/* ================= Admin login ================= */
+document.getElementById('loginForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const u = document.getElementById('loginUser').value.trim();
+  const p = document.getElementById('loginPass').value;
+  const hash = await sha256(p);
+  const found = admins.find(a => a.username === u && a.passwordHash === hash);
+  const errEl = document.getElementById('loginError');
+  if(!found){ errEl.classList.add('show'); return; }
+  errEl.classList.remove('show');
+  currentAdmin = found;
+  closeModal('loginOverlay'); e.target.reset();
+  renderHeaderAuthState();
+  showToast('مرحبًا، ' + found.username);
+  openAdminPanel();
+});
+function adminLogout(){ currentAdmin = null; closeAdminPanel(); renderHeaderAuthState(); showToast('تم تسجيل الخروج'); }
+function renderHeaderAuthState(){
+  const btn = document.getElementById('adminEntryBtn');
+  btn.title = currentAdmin ? 'لوحة التحكم' : 'دخول الإدارة';
+}
+function hasPerm(key){ return currentAdmin && (currentAdmin.role === 'super_admin' || (currentAdmin.permissions && currentAdmin.permissions[key])); }
+
+/* ================= Admin panel open/close & tabs ================= */
+function openAdminPanel(){
+  document.getElementById('adminOverlay').classList.add('open');
+  document.getElementById('adminWhoami').textContent = currentAdmin.username + ' · ' + (currentAdmin.role === 'super_admin' ? 'مدير عام' : 'مسؤول');
+  document.querySelectorAll('.admin-tab').forEach(tab => {
+    const key = tab.dataset.tab;
+    const need = key === 'products' ? 'products' : key === 'users' ? 'users' : key === 'contact' ? 'contact' : key === 'settings' ? 'settings' : null;
+    tab.style.display = (need && !hasPerm(need)) ? 'none' : 'flex';
+  });
+  const firstVisible = Array.from(document.querySelectorAll('.admin-tab')).find(t => t.style.display !== 'none');
+  if(firstVisible) switchAdminTab(firstVisible.dataset.tab);
+  renderAdminProductsTable(); renderAdminServicesTable(); renderAdminOrders(); renderAdminUsersTable(); fillContactForm(); fillSettingsForm();
+}
+function closeAdminPanel(){ document.getElementById('adminOverlay').classList.remove('open'); }
+document.querySelectorAll('.admin-tab').forEach(tab => tab.addEventListener('click', () => switchAdminTab(tab.dataset.tab)));
+function switchAdminTab(key){
+  document.querySelectorAll('.admin-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === key));
+  document.querySelectorAll('.admin-panel-section').forEach(s => s.classList.toggle('active', s.id === 'tab-'+key));
+}
+
+/* ================= Product CRUD (admin) ================= */
+function openInvForm(id){
+  editingProductId = id || null;
+  const isEdit = !!id;
+  document.getElementById('itemFormTitle').textContent = isEdit ? 'تعديل القطعة' : 'إضافة قطعة للمخزون';
+  document.getElementById('invSubmitBtn').textContent = isEdit ? 'حفظ التعديلات' : 'إضافة إلى المخزون';
+  document.getElementById('invForm').reset();
+  document.getElementById('invThumb').innerHTML = 'لا توجد صورة';
+  pendingImage = '';
+  if(isEdit){
+    const p = inventory.find(x => x.id === id);
+    if(p){
+      document.getElementById('invName').value = p.name;
+      document.getElementById('invBrand').value = p.brand||'';
+      document.getElementById('invModel').value = p.model||'';
+      document.getElementById('invPrice').value = p.price;
+      document.getElementById('invType').value = p.type;
+      if(p.image){ pendingImage = p.image; document.getElementById('invThumb').innerHTML = '<img src="'+p.image+'">'; }
+    }
+  }
+  openModal('itemOverlay');
+}
+let pendingImage = '';
+document.getElementById('invImage').addEventListener('change', e => {
+  const file = e.target.files[0]; if(!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => { pendingImage = ev.target.result; document.getElementById('invThumb').innerHTML = '<img src="'+pendingImage+'">'; };
+  reader.readAsDataURL(file);
+});
+document.getElementById('invForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const data = {
+    name:document.getElementById('invName').value.trim(), brand:document.getElementById('invBrand').value.trim(),
+    model:document.getElementById('invModel').value.trim(), price:Number(document.getElementById('invPrice').value),
+    type:document.getElementById('invType').value, image:pendingImage
+  };
+  if(editingProductId){
+    const idx = inventory.findIndex(x => x.id === editingProductId);
+    if(idx > -1) inventory[idx] = Object.assign(inventory[idx], data);
+    showToast('تم تعديل القطعة');
+  } else {
+    inventory.unshift(Object.assign({id:'inv_'+Date.now()}, data));
+    showToast('تمت إضافة القطعة');
+  }
+  await saveInventory();
+  closeModal('itemOverlay'); editingProductId = null;
+  activeCat = 'all'; document.querySelectorAll('.cat-pill').forEach(b=>b.classList.remove('active'));
+  document.querySelector('.cat-pill[data-cat="all"]').classList.add('active');
+  renderGrid();
+});
+async function deleteProduct(id){
+  if(!confirm('حذف هذه القطعة نهائيًا؟')) return;
+  inventory = inventory.filter(x => x.id !== id);
+  await saveInventory(); renderGrid(); showToast('تم الحذف');
+}
+function renderAdminProductsTable(){
+  const t = document.getElementById('adminProductsTable');
+  if(!t) return;
+  t.innerHTML = '<tr><th>صورة</th><th>الاسم</th><th>النوع</th><th>السعر</th><th></th></tr>' +
+    inventory.map(p => `<tr><td>${p.image ? '<img src="'+p.image+'">' : '—'}</td><td>${escapeHtml(p.name)}</td><td>${p.type}</td><td>${Number(p.price).toLocaleString('en-US')} ر.ي</td>
+      <td class="row-actions"><button class="mini-btn edit" onclick="openInvForm('${p.id}')">تعديل</button><button class="mini-btn del" onclick="deleteProduct('${p.id}')">حذف</button></td></tr>`).join('');
+}
+
+/* ================= Service CRUD (admin) ================= */
+function openSvcForm(id){
+  editingServiceId = id || null;
+  const isEdit = !!id;
+  document.getElementById('svcFormTitle').textContent = isEdit ? 'تعديل الخدمة' : 'إضافة خدمة';
+  document.getElementById('svcSubmitBtn').textContent = isEdit ? 'حفظ التعديلات' : 'حفظ الخدمة';
+  document.getElementById('svcForm').reset();
+  if(isEdit){
+    const s = services.find(x => x.id === id);
+    if(s){ document.getElementById('svcName').value = s.name; document.getElementById('svcDesc').value = s.desc; }
+  }
+  openModal('svcOverlay');
+}
+document.getElementById('svcForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const data = {name:document.getElementById('svcName').value.trim(), desc:document.getElementById('svcDesc').value.trim()};
+  if(editingServiceId){
+    const idx = services.findIndex(x => x.id === editingServiceId);
+    if(idx > -1) services[idx] = Object.assign(services[idx], data);
+    showToast('تم تعديل الخدمة');
+  } else {
+    services.push(Object.assign({id:'svc_'+Date.now()}, data));
+    showToast('تمت إضافة الخدمة');
+  }
+  await saveServices(); closeModal('svcOverlay'); editingServiceId = null; renderServices();
+});
+async function deleteService(id){
+  if(!confirm('حذف هذه الخدمة نهائيًا؟')) return;
+  services = services.filter(x => x.id !== id);
+  await saveServices(); renderServices(); showToast('تم الحذف');
+}
+function renderAdminServicesTable(){
+  const t = document.getElementById('adminServicesTable');
+  if(!t) return;
+  t.innerHTML = '<tr><th>الاسم</th><th>الوصف</th><th></th></tr>' +
+    services.map(s => `<tr><td>${escapeHtml(s.name)}</td><td>${escapeHtml(s.desc)}</td>
+      <td class="row-actions"><button class="mini-btn edit" onclick="openSvcForm('${s.id}')">تعديل</button><button class="mini-btn del" onclick="deleteService('${s.id}')">حذف</button></td></tr>`).join('');
+}
+
+/* ================= Orders (admin view) ================= */
+function renderAdminOrders(){
+  const el = document.getElementById('adminOrdersList'); if(!el) return;
+  if(orders.length === 0){ el.innerHTML = '<div class="empty-state">لا توجد طلبات بعد.</div>'; return; }
+  el.innerHTML = orders.map(o => `<div class="order-item"><div class="oname">${escapeHtml(o.customer)} — ${escapeHtml(o.phone)}</div>
+    <div>${escapeHtml(o.item)} × ${o.qty}</div><div style="color:var(--ink-soft);">${o.delivery} ${o.notes ? '· '+escapeHtml(o.notes) : ''}</div>
+    <div style="color:var(--ink-soft);font-size:.75rem;">${new Date(o.createdAt).toLocaleString('ar-EG')}</div></div>`).join('');
+}
+
+/* ================= Users (admin) ================= */
+document.getElementById('userForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const username = document.getElementById('newAdminUser').value.trim();
+  if(admins.find(a => a.username === username)){ showToast('اسم المستخدم موجود مسبقًا'); return; }
+  const passwordHash = await sha256(document.getElementById('newAdminPass').value);
+  const permissions = {
+    users:document.getElementById('permUsers').checked, products:document.getElementById('permProducts').checked,
+    contact:document.getElementById('permContact').checked, settings:document.getElementById('permSettings').checked
+  };
+  admins.push({username, passwordHash, role:'admin', permissions});
+  await saveAdmins(); closeModal('userOverlay'); e.target.reset();
+  document.getElementById('permProducts').checked = true;
+  renderAdminUsersTable(); showToast('تمت إضافة المستخدم');
+});
+async function deleteAdmin(username){
+  if(username === 'admin'){ showToast('لا يمكن حذف حساب المدير العام'); return; }
+  if(!confirm('حذف هذا المستخدم؟')) return;
+  admins = admins.filter(a => a.username !== username);
+  await saveAdmins(); renderAdminUsersTable(); showToast('تم الحذف');
+}
+function renderAdminUsersTable(){
+  const t = document.getElementById('adminUsersTable'); if(!t) return;
+  t.innerHTML = '<tr><th>المستخدم</th><th>الدور</th><th>الصلاحيات</th><th></th></tr>' +
+    admins.map(a => {
+      const perms = a.role === 'super_admin' ? '<span class="perm-badge">جميع الصلاحيات</span>' :
+        Object.entries(a.permissions||{}).filter(([k,v])=>v).map(([k]) => `<span class="perm-badge">${({users:'مستخدمون',products:'منتجات',contact:'تواصل',settings:'إعدادات'})[k]}</span>`).join(' ');
+      return `<tr><td>${escapeHtml(a.username)}</td><td>${a.role==='super_admin' ? '<span class="role-badge">مدير عام</span>' : 'مسؤول'}</td>
+        <td><div class="perm-badges">${perms}</div></td>
+        <td class="row-actions">${a.role !== 'super_admin' ? '<button class="mini-btn del" onclick="deleteAdmin(\''+a.username+'\')">حذف</button>' : ''}</td></tr>`;
+    }).join('');
+}
+
+/* ================= Contact (admin) ================= */
+function fillContactForm(){
+  document.getElementById('cPhone1').value = siteSettings.phone1;
+  document.getElementById('cPhone2').value = siteSettings.phone2;
+  document.getElementById('cAddress').value = siteSettings.address;
+  document.getElementById('cHours').value = siteSettings.hours;
+}
+document.getElementById('contactForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  siteSettings.phone1 = document.getElementById('cPhone1').value.trim();
+  siteSettings.phone2 = document.getElementById('cPhone2').value.trim();
+  siteSettings.address = document.getElementById('cAddress').value.trim();
+  siteSettings.hours = document.getElementById('cHours').value.trim();
+  await saveSiteSettings(); applySiteSettingsToDom(); showToast('تم حفظ بيانات التواصل');
+});
+
+/* ================= Settings (admin) ================= */
+function fillSettingsForm(){
+  document.getElementById('sSiteName').value = siteSettings.siteName;
+  document.getElementById('sSiteTagline').value = siteSettings.tagline;
+  document.getElementById('sAiEnabled').checked = !!siteSettings.aiEnabled;
+  document.getElementById('sAiInstructions').value = siteSettings.aiInstructions || '';
+}
+async function saveSiteIdentity(e){
+  e.preventDefault();
+  siteSettings.siteName = document.getElementById('sSiteName').value.trim() || siteSettings.siteName;
+  siteSettings.tagline = document.getElementById('sSiteTagline').value.trim();
+  await saveSiteSettings(); applySiteSettingsToDom(); showToast('تم حفظ الهوية');
+}
+async function saveAiSettings(e){
+  e.preventDefault();
+  siteSettings.aiEnabled = document.getElementById('sAiEnabled').checked;
+  siteSettings.aiInstructions = document.getElementById('sAiInstructions').value.trim();
+  await saveSiteSettings(); showToast('تم حفظ إعدادات المساعد');
+}
+async function changeOwnPassword(e){
+  e.preventDefault();
+  const val = document.getElementById('sNewPass').value;
+  if(!val || val.length < 4){ showToast('كلمة المرور قصيرة جدًا'); return; }
+  const hash = await sha256(val);
+  const idx = admins.findIndex(a => a.username === currentAdmin.username);
+  if(idx > -1){ admins[idx].passwordHash = hash; currentAdmin = admins[idx]; await saveAdmins(); showToast('تم تحديث كلمة المرور'); document.getElementById('sNewPass').value=''; }
+}
+
+/* ================= AI auto-reply chat ================= */
+let chatHistory = [];
+document.getElementById('fabAi').onclick = () => {
+  const panel = document.getElementById('chatPanel');
+  panel.classList.toggle('open');
+  if(panel.classList.contains('open') && document.getElementById('chatBody').children.length === 0){
+    addChatMsg('bot', 'أهلًا بك في الرائد للمرايا! اسألني عن توفر قطعة، سعرها، أو خدماتنا وسأساعدك.');
+  }
+};
+function addChatMsg(role, text){
+  const body = document.getElementById('chatBody');
+  const div = document.createElement('div');
+  div.className = 'msg ' + role;
+  div.textContent = text;
+  body.appendChild(div);
+  body.scrollTop = body.scrollHeight;
+  return div;
+}
+async function sendChat(){
+  const input = document.getElementById('chatInput');
+  const text = input.value.trim();
+  if(!text) return;
+  if(!siteSettings.aiEnabled){
+    addChatMsg('user', text);
+    addChatMsg('bot', 'الرد الآلي غير مفعّل حاليًا. تواصل معنا مباشرة عبر واتساب: ' + siteSettings.phone1);
+    input.value=''; return;
+  }
+  addChatMsg('user', text);
+  chatHistory.push({role:'user', content:text});
+  input.value = '';
+  const typingEl = addChatMsg('bot typing', 'يكتب الآن...');
+  try{
+    const catalogSummary = inventory.slice(0,25).map(p => `${p.name} - ${p.type} - ${p.price} ر.ي`).join('\n');
+    const servicesSummary = services.map(s => `${s.name}: ${s.desc}`).join('\n');
+    const systemPrompt = `أنت المساعد الرقمي لمحل "${siteSettings.siteName}" في صنعاء، اليمن، المتخصص ببيع وإصلاح مرايا السيارات.
+العنوان: ${siteSettings.address}
+الهاتف: ${siteSettings.phone1} ${siteSettings.phone2 ? '/ '+siteSettings.phone2 : ''}
+ساعات العمل: ${siteSettings.hours}
+الخدمات المتوفرة:
+${servicesSummary}
+عينة من المخزون الحالي (قد يوجد المزيد غير مدرج):
+${catalogSummary}
+${siteSettings.aiInstructions ? 'تعليمات إضافية من الإدارة: ' + siteSettings.aiInstructions : ''}
+رد بالعربية دائمًا، بإيجاز ووضوح، وبأسلوب ودود ومباشر. إذا سُئلت عن قطعة غير مذكورة، اطلب من العميل التواصل مباشرة عبر واتساب أو الاتصال لتأكيد التوفر، ولا تختلق معلومات عن السعر أو التوفر لقطع غير مذكورة أعلاه. شجّع العميل على استخدام زر "إضافة طلب" في الموقع لإتمام الطلب.`;
+
+    const response = await fetch("https://api.anthropic.com/v1/messages", {
+      method:"POST", headers:{"Content-Type":"application/json"},
+      body: JSON.stringify({
+        model:"claude-sonnet-4-6", max_tokens:400,
+        system: systemPrompt,
+        messages: chatHistory.slice(-8)
+      })
+    });
+    const data = await response.json();
+    typingEl.remove();
+    const textBlocks = (data.content||[]).filter(b => b.type === 'text').map(b => b.text).join('\n').trim();
+    const reply = textBlocks || 'عذرًا، لم أتمكن من فهم طلبك. تواصل معنا مباشرة عبر واتساب.';
+    addChatMsg('bot', reply);
+    chatHistory.push({role:'assistant', content:reply});
+  }catch(err){
+    typingEl.remove();
+    addChatMsg('bot', 'حدث خلل في الاتصال بالمساعد الذكي. يمكنك التواصل معنا مباشرة عبر واتساب: ' + siteSettings.phone1);
+  }
+}
+document.getElementById('chatSend').onclick = sendChat;
+document.getElementById('chatInput').addEventListener('keydown', e => { if(e.key === 'Enter') sendChat(); });
+
+/* ================= Init ================= */
+(async function init(){
+  await loadTheme();
+  await loadSiteSettings();
+  await loadAdmins();
+  await loadInventory();
+  await loadServices();
+  await loadOrders();
+  renderHeaderAuthState();
+})();
+</script>
+</body>
+</html>
